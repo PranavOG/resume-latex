@@ -1,0 +1,124 @@
+\documentclass[11pt, letterpaper]{article}
+
+% Packages
+\usepackage[margin=0.75in]{geometry}
+\usepackage{titlesec}
+\usepackage{enumitem}
+\usepackage{hyperref}
+\usepackage{xcolor}
+
+% Color and Link Setup
+\definecolor{darkblue}{RGB}{0,0,139}
+\hypersetup{
+    colorlinks=true,
+    linkcolor=darkblue,
+    filecolor=darkblue,
+    urlcolor=darkblue,
+}
+
+% Section Formatting
+\titleformat{\section}{\Large\bfseries\uppercase}{}{0pt}{}[\titlerule]
+\titlespacing{\section}{0pt}{12pt}{8pt}
+
+% Custom Commands for ease of use
+\newcommand{\resumeItem}[1]{\item\small{#1}}
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-1pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-5pt}
+}
+
+\begin{document}
+\thispagestyle{empty}
+
+%---------------------------------------------------
+% HEADER
+%---------------------------------------------------
+\begin{center}
+    {\Huge \textbf{Pranav Srinivasan}} \\ \vspace{4pt}
+    Kent, OH $|$ (443) 901-8648 $|$ \href{mailto:pranavvs05@gmail.com}{pranavvs05@gmail.com} \\
+    \href{https://github.com/PranavOG}{github.com/PranavOG} $|$ \href{https://linkedin.com/in/yourusername}{linkedin.com/in/yourusername}
+\end{center}
+
+%---------------------------------------------------
+% EDUCATION
+%---------------------------------------------------
+\section{Education}
+\begin{itemize}[leftmargin=0.15in, label={}]
+    \resumeSubheading
+        {Kent State University}{Kent, OH}
+        {Bachelor of Science in Physics}{Expected May 2027}
+        \vspace{2pt}
+        \begin{itemize}[leftmargin=0.15in, label={$\bullet$}]
+            \resumeItem{\textbf{Relevant Coursework:} Thermodynamics, Quantum Mechanics, Control Systems, MATLAB Programming}
+        \end{itemize}
+\end{itemize}
+
+%---------------------------------------------------
+% RESEARCH EXPERIENCE
+%---------------------------------------------------
+\section{Research Experience}
+\begin{itemize}[leftmargin=0.15in, label={}]
+    \resumeSubheading
+        {Undergraduate Researcher}{Oct 2023 -- Present}
+        {Dr. Thorsten Schmidt Lab, Kent State University}{Kent, OH}
+        \begin{itemize}[leftmargin=0.15in, label={$\bullet$}]
+            \resumeItem{Investigated DNA origami structures, focusing on support structures to suspend DNA nanodiscs for use in membrane protein imaging and structure characterization.}
+            \resumeItem{Utilized CaDNAno to design DNA origami structures. Developed skills in micropipetting, DNA origami synthesis, and analysis using gel electrophoresis and Transmission Electron Microscopy (TEM).}
+        \end{itemize}
+\end{itemize}
+
+%---------------------------------------------------
+% ENGINEERING & TECHNICAL PROJECTS
+%---------------------------------------------------
+\section{Engineering Projects}
+\begin{itemize}[leftmargin=0.15in, label={}]
+    \resumeSubheading
+        {HAVOC Flight Computer}{Aug 2025 -- Present}
+        {Embedded Engineer / Contributor}{}
+        \begin{itemize}[leftmargin=0.15in, label={$\bullet$}]
+            \resumeItem{Designed and routed custom PCB boards for various flight computer subsystems.}
+            \resumeItem{Integrated environmental sensor suites (BMI088, MS5611, BME688, SHT41) for high-altitude telemetry collection.}
+        \end{itemize}
+
+    \resumeSubheading
+        {IREC High-Power Rocketry}{Aug 2024 -- Present}{Club-Side Payload Lead / Contributor}{}
+        \begin{itemize}[leftmargin=0.15in, label={$\bullet$}]
+            \resumeItem{Lead payload development and testing of the PCBs and electronics for a 4U, weather station payload driven by a Raspberry Pi and Arduino.}
+            \resumeItem{Developed the software stack to interface with the sensors and control the payload's landing legs mechanism. Analysis of environmental data on-board the Raspberry Pi to calculate atmospheric conditions including wind speed and direction.}
+        \end{itemize}
+
+    \resumeSubheading
+        {Amateur Radio \& Remote Telemetry Beacon}{Aug 2025 -- Present}
+        {Hardware \& Software Implementation}{}
+        \begin{itemize}[leftmargin=0.15in, label={$\bullet$}]
+            \resumeItem{Configured a Raspberry Pi 3A+ running a Python-based telemetry stack for AX.25 packet decoding and APRS transmission.}
+            \resumeItem{Interfaced HackRF and RTL-SDR hardware with SDR++ for real-time digital communications and signal analysis.}
+        \end{itemize}
+
+    \resumeSubheading
+        {AstroFlashes, FlashSat-1}{Oct 2025 -- Present}{Deputy Lead, Communications}{}
+        \begin{itemize}[leftmargin=0.15in, label={$\bullet$}]
+            \resumeItem{Lead the communications team for the AstroFlashes project, managing the on-board telemetry and APRS transmission.}
+            \resumeItem{Developed F Prime (F') stack for on-board telemetry and APRS transmission.}
+            \resumeItem{Layed the groundwork for ground station development at Andrew Paton Airport}
+            \resumeItem{Helped development of a buildroot operating system for the BeagleBone Black Industrial}
+            \resumeItem{Development of Student Research and Developed (SRAD) PCB carrier boards for the BeagleBone Black Industrial and Raspberry Pi Compute Module 5}
+        \end{itemize}
+\end{itemize}
+
+%---------------------------------------------------
+% TECHNICAL SKILLS
+%---------------------------------------------------
+\section{Technical Skills}
+\begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+     \textbf{Languages}{: C,C++, Python, \LaTeX, Bash} \\
+     \textbf{Hardware \& Embedded}{: KiCad, Arduino, Raspberry Pi, BeagleBone, SDR, Oscilloscopes} \\
+     \textbf{Software \& Tools}{: Arch Linux (Hyprland), Fedora, Ubuntu, Neovim, F Prime (F'), Git}
+    }}
+\end{itemize}
+
+\end{document}
